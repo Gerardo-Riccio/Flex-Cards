@@ -56,17 +56,21 @@ p {
 
 
 
-.container-contact {
+.container-contacts {
+    background-color: rgba(78, 26, 138, 0.281);
     display: flex;   
-
 }
 
 
-/* .container1 {
+.container-contacts .contact {
+    background-color: rgba(119, 0, 255, 0.562);
     display: flex;  
 }
- */
 
+
+/* .container-photo, .container-info {
+    display: flex;  
+} */
 
 
 
