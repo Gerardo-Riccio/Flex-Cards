@@ -36,6 +36,8 @@ header {
     border: 1px solid black;
     margin-top: 44px; 
     margin-bottom: 64px; 
+    text-align: center;
+    color: #e53170;
 
 }
 
@@ -48,6 +50,7 @@ main {
 p {
     background-color: rgba(119, 0, 255, 0.281);
     margin-bottom: 50px;     
+    text-align: center;
 
 }
 
