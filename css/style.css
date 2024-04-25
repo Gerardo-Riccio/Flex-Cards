@@ -17,78 +17,71 @@
 
 
 body {
-    background-color: rgb(255, 253, 164);
     margin-left: 262px;
     margin-right: 262px;
 }
 
 header, main {
-    margin-bottom: 64px;     
-
-    
+    margin-bottom: 64px;         
 }
 
-
-
 header {
-    background-color: aqua;
-    border: 1px solid black;
     margin-top: 44px; 
     margin-bottom: 64px; 
     text-align: center;
     color: #e53170;
-
 }
 
+header > h1 {
+    font-size: 2.5em;
+}
 
-main {
-    background-color: rgb(0, 255, 200);
-    border: 1px solid black; 
+main > p {
+    font-weight: 500;
+    color: gray;
 }
 
 p {
-    background-color: rgba(119, 0, 255, 0.281);
     margin-bottom: 50px;     
     text-align: center;
-
 }
 
 
 
-
-
-
-/* \\\\\\\ */
-
-
-
-
-
-
-
-
+/* Elementi FLEX-------------  */
 
 .container-contacts {           /* Padre-Flex */
-    background-color: rgb(42, 165, 155);
-    
     display: flex;
     flex-wrap: wrap;   
     justify-content: space-between;     
- /* gap: 15px; */  
-    margin: 0 - 10px;
-
+ /* gap: 15px; */      
 }
 
 .contact {          /* Figli-Flex, e padri anche loro di 2 item */
-    background-color: brown;
+    background-color: #0f0e17;
+    box-shadow: 0px 0px 20px 2px grey;
     display: flex;    
 
-    border: 1px solid black;
     height: 100px;
-    width: 357px;
-    margin: 10px;  
-     
+    width: 357px;   
+    margin-bottom: 32px ;     
 }
+
+.nome-cognome {
+    color: white;
+}
+
+.professione {
+    color: white;
+    font-weight: normal;
+}
+
+.email > a {
+    text-decoration: none;
+    color: #00abf4;
+    font-weight: normal;
+}
+
 
 img {   /* (l'immagine che deve essere grande quanto il suo container) */   
     max-width: auto;
@@ -104,5 +97,4 @@ img {   /* (l'immagine che deve essere grande quanto il suo container) */
     justify-content: space-evenly; 
 }
 
-
-/* \\\\\\\ */
+/* \\Elementi FLEX-------------  */
