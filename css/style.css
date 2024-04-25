@@ -10,17 +10,10 @@
 
 
 
-header, main, footer {
-    /* margin: 50px 100px; */
-    
-}
-
 body {
     background-color: rgb(255, 253, 164);
     margin-left: 262px;
     margin-right: 262px;
-
-
 }
 
 header, main {
@@ -56,23 +49,106 @@ p {
 
 
 
-.container-contacts {
-    background-color: rgba(78, 26, 138, 0.281);
-    display: flex;   
+
+
+
+
+.container-contacts .container-photo {  
+    background-color: rgba(55, 0, 255, 0.562);  
+    flex-shrink: 0;
+    
+  
+    
+}
+
+.container-contacts .container-info {
+    background-color: rgba(255, 0, 149, 0.562);
+    /* display: flex;   */
+
+
 }
 
 
-.container-contacts .contact {
-    background-color: rgba(119, 0, 255, 0.562);
-    display: flex;  
+
+
+
+.container-contacts {   
+    background-color: rgb(42, 165, 155);
+    
+    display: flex;
+    flex-wrap: wrap;        
+    
+ /* gap: 15px; */
+    margin: 0 - 10px;   /*(1di3 ------- Valori da modificare) */
+}
+
+.contact {        
+    background-color: brown;
+    
+    border: 1px solid black;
+    width: 357px;
+    height: 100px;   /*(2di3 ------- Valori da modificare, (è 20 xke è il doppio di 10) */
+/*  flex-shrink: 1;  (valori FLEX di default)
+    flex-grow: 0;    (valori FLEX di default)     */
+    flex-shrink: 0;
+    margin: 10px;   /*(3di3 ------- Valori da modificare) */
+}
+
+/* \\\\\\\ */
+
+
+/* \\moment disattiva\\\\\ */
+
+.container-photo, .container-info {
+    display: none;
 }
 
 
-/* .container-photo, .container-info {
-    display: flex;  
-} */
+
+/* \\\\\\\ */
 
 
 
 
 
+
+
+
+.row {           /* Padre-Flex */
+    background-color: rgb(42, 165, 155);
+    
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-between;     
+ /* gap: 15px; */  
+    margin: 0 - 10px;
+
+}
+
+.col {          /* Figli-Flex, e padri anche loro di 2 item */
+    background-color: brown;
+    display: flex;    
+
+    border: 1px solid black;
+    height: 100px;
+    width: 357px;
+    margin: 10px;  
+     
+}
+
+img {   /* (l'immagine che deve essere grande quanto il suo container) */   
+    max-width: auto;
+    height: 100%;
+}
+
+
+.info {      /* Figli-Flex */
+    padding: 5px 17px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+
+/* \\\\\\\ */
